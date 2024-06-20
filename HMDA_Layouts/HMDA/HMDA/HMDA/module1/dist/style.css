@@ -1,0 +1,160 @@
+#map {
+    width: 100%;
+    height: calc(100vh - 77px);
+
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    background-color: #C2C2C2;
+    color: #333;
+    padding: 10px;
+  }
+  
+  .logo-img {
+    width: 80px;
+  }
+  .hmdalogo-img {
+    width: 175px;
+  }
+  
+  .center-text {
+    padding-right: 40px;
+    margin: 0 10px;
+    font-size:55px;
+    font-family:'Poppins SemiBold', sans-serif;
+    color: black;
+    font-weight: 600;
+    transition: 0.5s;
+  }
+
+  .center-text:hover{
+    -webkit-text-stroke: 3px rgba(34, 15, 184, 0.731);
+    text-shadow: 0 0 10px rgba(255,255,255, 0.1);
+    
+}
+@media only screen and (max-width: 768px) {
+    .topbar {
+      
+      height: flex;
+    }
+  
+    .center-text {
+      text-align: center;
+      font-size: 18px;
+      padding-left:15px;
+    }
+  
+    .hmdalogo-img {
+      width: 50px;
+      max-width: 150px; /* Adjust the maximum width as needed */
+      height: auto;
+     
+    }
+    .logo-img{
+        width: 30px;
+        max-width: 150px; /* Adjust the maximum width as needed */
+        height: auto;
+        
+      }
+    
+  } 
+  
+.map-coordinate {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3px;
+    color: #fff;
+    background-color: rgb(78, 74, 74);
+    border: 0px solid black;
+    border-radius: 5%;
+}
+.full-screen {
+    padding:5px;
+    /* color:  */
+    background-color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 220px
+}
+
+.custom-icon {
+  width: 20px;  /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+}
+
+
+
+.zoom-to-layer{
+    padding: 5px;
+    background-color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 260px;
+}
+
+.leaflet-measure-tool{
+    padding: 5px;
+    background-color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 260px;
+}
+#info_btn {
+    position: absolute;
+    z-index: 500;
+    top: 1%;
+    left: 80%;
+
+}
+
+.leaflet-popup-content {
+    width: auto !important;
+}
+
+
+.leaflet-control.full-screen {
+    position: absolute;
+    top: 180px; /* Adjust the top position as needed */
+    right: 11.80px;
+    z-index: 600; /* Adjust the right position as needed */
+    /* You can also use other positioning properties based on your layout requirements */
+  }
+
+  .my-custom-marker {
+    /* Your custom marker styles go here */
+    background-color: #ff0000; /* Example: red background */
+    border-radius: 50%; /* Example: rounded shape */
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #ffffff; /* Example: white text color */
+}
+
+
+/* Style for the legend container */
+.legend-container {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for the legend heading */
+
+.legend-heading {
+  font-size: 16px;
+  margin-bottom: 1px;
+}
+
+/* Style for the legend content */
+.legend-content p {
+  margin: 0;
+  padding: 1px;
+}
